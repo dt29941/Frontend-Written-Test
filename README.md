@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Crypto Leaner:
 
-## Getting Started
+This is a Crypto learning platform prototype for the users. The idea is because the increasing popularity and crypto and not everyove has deep understanding in techn like blockchain, Web3 etc. At this stage, no learning material is provided but it would be welcomed for you to add your own material.
 
-First, run the development server:
+-
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Pages:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Login : Next-Auth applied but actually you can type anything to login
+2. mainPage: provide a search function and some sample for course selection
+3. Crypto Dashboard: a page allowed user to check the price of difference Crptocurrenies by fetching public api
+4. FAQ: some FAQ about Crypto Learner
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-
 
-This project uses [`t`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tech-stack:
+Next.js
+Next-Auth
+Redux Toolkit
+Jest
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Login Page: Navigate to home page after login 
+a. Login (completed)
+b. Logout (completed)
+2. Home Page: Show the page after login
+a. Navigation Menu on the left (completed)
+3. Dashboard Page
+a. fetch the data from a public api (completed)
+b. show the data in table/graph format (completed)
+4. State Management: Utilize Redux for managing application state. (completed)
+5. Network Requests: Use Axios or Fetch API for data retrieval. (completed)
+6. Testing: Write unit tests for your components using Jest and React Testing Library. (completed)

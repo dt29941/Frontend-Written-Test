@@ -18,6 +18,7 @@ export default function Sidebar() {
 
   return (
     <>
+    {/*pathname.length > 1 == appears in all pages except login page */}
       {pathname.length > 1 &&(
         <Box
           sx={{
