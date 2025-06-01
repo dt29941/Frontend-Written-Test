@@ -1,4 +1,7 @@
-Crypto Leaner:
+Setup:
+
+filling the info in env.smaple to map to your localhost and enable next-auth
+Crypto Learner:
 
 This is a Crypto learning platform prototype for the users. The idea is because the increasing popularity and crypto and not everyove has deep understanding in techn like blockchain, Web3 etc. At this stage, no learning material is provided but it would be welcomed for you to add your own material.
 

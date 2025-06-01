@@ -97,6 +97,7 @@ export default function Home() {
             borderRadius: '12px',
             padding: '20px',
             maxWidth: '400px',
+            margin:"10px",
             width: '100%',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
             border: '2px solid transparent',
@@ -105,7 +106,8 @@ export default function Home() {
             backgroundClip: 'padding-box, border-box',
             transition: 'transform 0.2s ease-in-out',
             '&:hover': { transform: 'scale(1.02)' },
-            pointerEvents: 'auto', // Enable pointer events on form
+            pointerEvents: 'auto',
+
           }}
         >
           <Typography component="h1" variant="h5" sx={{ color: '#000000' }}>

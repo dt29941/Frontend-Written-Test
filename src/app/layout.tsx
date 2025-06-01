@@ -4,7 +4,7 @@ import "./globals.css";
 import StoreProvider from "./storeProvider";
 
 export const metadata: Metadata = {
-  title: "Crypto Leaner", 
+  title: "Crypto Learner", 
   description: "Learn everything about Crypto",
   icons: {
     icon: "/file.svg",
