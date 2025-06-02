@@ -5,10 +5,11 @@ NEXTAUTH_SECRET=(your secret)
 
 then run:
 npm i
+-
 npm run dev
-
+-
 for testing please run:
-
+-
 npm run test
 
 -
