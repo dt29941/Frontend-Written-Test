@@ -3,14 +3,15 @@ fill in .env.local with
 NEXTAUTH_URL=(your localhost url)
 NEXTAUTH_SECRET=(your secret)
 
-then run:
+then run for lib install:
 npm i
--
+
+start the application by:
 npm run dev
--
+
 for testing please run:
--
 npm run test
+
 
 -
 
