@@ -33,3 +33,10 @@ b. show the data in table/graph format (completed)
 4. State Management: Utilize Redux for managing application state. (completed)
 5. Network Requests: Use Axios or Fetch API for data retrieval. (completed)
 6. Testing: Write unit tests for your components using Jest and React Testing Library. (completed)
+
+-
+
+answer of knowledge question:
+Please read the file of knowledgeQuestion
+
+Thanks for your time and consideration :)
