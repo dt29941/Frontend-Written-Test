@@ -1,0 +1,122 @@
+Knowledge Questions:
+1. Version Control Systems (Git) Experience:
+Question: Describe your workflow when using Git in a team setting,
+including how you handle branching, merge conflicts, and pull requests.
+
+- When using Git in a team setting, I would create a main branch for development and a branch of production first. If new function is required to development by developer team according to user's requirement. I would create new branchs for different developers for functions and handle pull request regularly. After the development process, I would merge the new branchs to the main development branch and then ready to go for production. To deal with the possible merge conflicts, I would use  Git's built-in conflict markers to identify the conflicting sections in the code and discussion with team members is necessary as well.
+
+2. Back-End Technologies Experience:
+Question: Can you give examples of back-end technologies you have
+integrated with React.js applications? Describe any challenges you
+encountered and how you overcame them.
+
+- I use expressjs for my backend development and integrated with React.js application. I dealt with CORS Issue, it cause my react client React client cannot access Express API due to cross-origin restrictions. The solution would be install CORS package. It allows the frontend React.js application to fetch the data again.
+
+3. Code Maintainability:
+Question: What practices do you follow to ensure your code is readable
+and maintainable by others? Describe the project structure you
+recommend for React.js and Next.js, projects to facilitate team
+collaboration.
+
+- I would make my development flow to be clear by making my reuseable code as componenet so that me and my colleagues does need to read the same code for many times and I also make sure to make the code flow to be clean (state management on top, and then fetching API data, functions on bottom) and adding comment if neccessary. for my project structure, I would seperate the api, lib made by myself/team, component,page, style to folders so that it can be easily managed.
+
+4. useEffect Hook:
+Question: Explain the purpose of the useEffect hook in React and discuss
+common mistakes or anti-patterns developers should avoid when using it.
+
+- The useEffect hook in React manages the effects of data fetching, subscriptions, or DOM updates, running after render.
+For example:
+useEffect(() => {
+  //  do something like fetch data function
+}, []) 
+It would fetch the data initially
+If the array in useeffect contains a element(s), which means it would run when the element(s) change.
+
+The common mistake is that beginner would cause a infinite loop by doing things like putting the useState in useEffect but also put that state in dependency array.
+
+5. SSR vs SSG:
+Question: Compare SSR vs SSG, suggest the pros and cons for each
+methodologies
+
+- SSR (Server-Side Rendering)
+Pros:
+
+- Always Up-to-Date: Shows the latest information every time you visit a page.
+- Good for SEO: Search engines can easily read and index the content, which helps with visibility.
+- Personalized Content: Can show different content for different users.
+Cons:
+
+- Slower Loading: Takes longer to load because the server has to create the page each time.
+- More Server Work: The server gets busier with more requests, which can slow it down.
+- Complex Setup: More complicated to set up and manage.
+SSG (Static Site Generation)
+Pros:
+
+- Fast Loading: Loads quickly because it uses pre-made pages that don’t need processing.
+- Less Server Strain: Uses fewer resources since static pages don’t require server work each time.
+- Easier to Manage: Simple to set up and deploy since it’s just static files.
+Cons:
+
+- Not Always Current: Information can be outdated until you do a new build to update it.
+- Longer Build Times: Takes time to generate all the pages when you make changes.
+- Less Personalization: Harder to show different content for different users directly from the server.
+6. Next.js Overview:
+Question: Compare Next.js with other frontend frameworks, such as
+Vue.js. Why and when would you choose Next.js for a project?
+
+- Next.js is better in SEO because it uses SSR and it makes the crawler / search engine would be easier to read and vue.js uses CSR (not good for SEO)
+- Next.js also provides a option for building a full-stack application which vue.js does not provide that
+- If your team is already experienced with React, using Next.js can speed up development and leverage existing knowledge.
+
+
+Question: Compare App router and Page router, suggest the pros and
+cons for each methodologies
+
+- App Router
+
+Pros:
+
+- Nested Routing: Easy to create complex layouts and manage multiple routes.
+- File-Based Routing: Automatically maps files in the /app folder to routes, making setup simpler.
+- Better Data Fetching: Works well with React Server Components for improved performance.
+- Shared Layouts: Easily create layouts that can be reused across different pages.
+Cons:
+
+- Learning Curve: New concepts can be tricky for those used to the Page Router.
+- Migration Effort: Existing projects may need work to switch over.
+Page Router
+
+Pros:
+
+- Simplicity: Easy to understand, making it great for beginners.
+- Established System: Lots of resources and community support available.
+- Backward Compatibility: Works well with older Next.js projects without major changes.
+Cons:
+
+- Limited Nesting: Harder to manage complex routes compared to the App Router.
+- Less Flexible: Doesn’t support newer features as well as the App Router.
+
+7. Redux and State Management:
+Question: Explain Redux and its core principles. Compare Redux to the
+React.js useHook in terms of state management, and provide scenarios
+where Redux might be a preferable choice.
+
+
+
+- Redux is a library for managing state in JavaScript apps, especially with React. It helps keep your app's data organized and predictable. for the core principles:
+- Single Source of Truth: All your app's state is in one place (the store), which create a middle state manager for complex state changes
+- Read-Only State: You can only change the state by dispatching actions, it ensures the state change flow to be clean.
+
+Compare Redux to usehooks:
+- Usehooks manages state within components and redux would be better for sharing state across many components
+- Usehooks is easier to use (without setup) and redux is required to have initial setup
+
+For the scebarios like the application is complex or a state change would affect multiple componenets. using Redux as a state manager would makes the developerment process easier. Besides, redux provide different support library as well.
+
+
+8. Test-Driven Development (TDD):
+Question: Describe the TDD process within the context of React
+development. What tools do you use for testing, and how do you approach
+writing tests before implementing features?
+
+- In React development, Test-Driven Development (TDD) follows a simple cycle: write a test, run it, implement the feature, and refactor. First, you start by writing a test for a new feature, which should fail since the feature isn't implemented yet. This ensures that your test is meaningful. Next, you run the test to confirm it fails as expected. Then, you write the minimum code necessary to make the test pass. After implementing the feature, run all tests to ensure both the new and existing tests pass. If any fail, adjust the code as needed. Finally, refactor the code to improve its structure while keeping all tests passing.
