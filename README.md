@@ -1,6 +1,20 @@
 Setup:
+fill in .env.local with 
+NEXTAUTH_URL=(your localhost url)
+NEXTAUTH_SECRET=(your secret)
 
-filling the info in env.smaple to map to your localhost and enable next-auth
+then run for lib install:
+npm i
+
+start the application by:
+npm run dev
+
+for testing please run:
+npm run test
+
+
+-
+
 Crypto Learner:
 
 This is a Crypto learning platform prototype for the users. The idea is because the increasing popularity and crypto and not everyove has deep understanding in techn like blockchain, Web3 etc. At this stage, no learning material is provided but it would be welcomed for you to add your own material.
@@ -33,3 +47,10 @@ b. show the data in table/graph format (completed)
 4. State Management: Utilize Redux for managing application state. (completed)
 5. Network Requests: Use Axios or Fetch API for data retrieval. (completed)
 6. Testing: Write unit tests for your components using Jest and React Testing Library. (completed)
+
+-
+
+answer of knowledge question:
+Please read the file of knowledgeQuestion
+
+Thanks for your time and consideration :)
