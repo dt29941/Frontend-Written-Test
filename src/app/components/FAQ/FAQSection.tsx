@@ -16,7 +16,7 @@ export default function FAQSection() {
       answer: "Cryptocurrency is a digital or virtual currency that uses cryptography for security and operates on a decentralized network, typically a blockchain. It allows for secure, peer-to-peer transactions without intermediaries like banks. Bitcoin and Ethereum are popular examples."
     },
     {
-      question: "Why Crypto Leaner?",
+      question: "Why Crypto Learner?",
       answer: "Learning about crypto helps you understand a transformative technology reshaping finance, technology, and investment. It empowers you to make informed decisions about investing, trading, or using crypto, while staying aware of risks and opportunities in a rapidly evolving market."
     },
     {
