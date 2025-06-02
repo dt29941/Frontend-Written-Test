@@ -17,6 +17,7 @@ export default function Priceboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  //fetch data from public api
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
@@ -29,7 +30,7 @@ export default function Priceboard() {
         const data = await response.json();
 
         const groupedPrices: Record<string, number[]> = {};
-
+//mapping the price of each day
         data.prices.forEach((priceData: [number, number]) => {
           const date = new Date(priceData[0]).toISOString().split('T')[0];
           if (!groupedPrices[date]) {
@@ -64,7 +65,7 @@ export default function Priceboard() {
   if (error) {
     return <Box sx={{  mt: 4, color: 'error.main' }}>Error: {error}</Box>;
   }
-
+// use of chart.js
   const chartData = {
     labels: prices.map(price => price.date.slice(5).replace("-", "/")),
     datasets: [
@@ -90,7 +91,7 @@ export default function Priceboard() {
       },
     },
   };
-
+//example data
   const currencies = [
     { txt: "BTC", coin: "bitcoin", decimal: 2, id: 0 },
     { txt: "ETH", coin: "ethereum", decimal: 2, id: 1 },
@@ -122,6 +123,9 @@ export default function Priceboard() {
       <Box sx={{ width: '100%', height: '400px' }}>
         <Line data={chartData} options={chartOptions} />
       </Box>
+       <Typography variant="body2" sx={{ color: '#fff', fontWeight:"600",marginTop:"20px" }}>
+                                         *You may hover/click the point in the graph to check price
+                                      </Typography>
     </Box>
   );
 }
